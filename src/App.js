@@ -1,13 +1,14 @@
 import React from 'react'
 import { BrowserRouter,Routes, Route } from 'react-router-dom'
 import { Box } from '@mui/material'
+
 import {Navbar, Feed, SearchFeed, VideoDetail, ChannelDetail} from './components'
 
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Box sx={{backgroundColor: "#000"}}>
+      <Box sx={{backgroundColor: ""}}>
         <Navbar />
         <Routes>
           <Route path="/" exact element={<Feed /> }/>

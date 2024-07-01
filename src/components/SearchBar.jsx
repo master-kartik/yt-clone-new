@@ -16,16 +16,17 @@ const SearchBar = () => {
     <Paper 
         component={"form"}
         onSubmit={handleSubmit}
-        sx={{borderRadius:10, border: '1px solid #e3e3e3' , pl: 2, boxShadow: 'none', mr: {sm:5}}}
+        sx={{borderRadius:'5px',width:'975px', bgcolor:'black',color:'black',border: '1px solid #e3e3e3' , pl: 2, boxShadow: 'none', mr: {sm:5}}}
        
     >
         <input className="search-bar"
-        placeholder="Search..."
+        placeholder="Search"
+        style={{backgroundColor:'black', color:'white'}}
         value={searchTerm}
         onChange={(e)=>{setSearchTerm(e.target.value)}}
 
         />
-        <IconButton type="submit" sx={{p: "10px", color:"red"}}>
+        <IconButton type="submit" sx={{ml: "550px", color:"red"}}>
             <Search  />
         </IconButton> 
     </Paper>
