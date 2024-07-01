@@ -12,7 +12,7 @@ import TheaterComedyIcon from '@mui/icons-material/TheaterComedy';
 import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';
 
-export const logo = 'https://seeklogo.com/images/A/anonymous-logo-B3E1ADE40C-seeklogo.com.png';
+export const logo = 'https://marketplacedesignoye.s3.ap-south-1.amazonaws.com/Anonymous_Architetto_-_Cubo_rosso-Abstract-icon-vector-logo-symbol.png';
 
 export const categories = [
   { name: 'New', icon: <HomeIcon />, },
