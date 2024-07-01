@@ -4,12 +4,15 @@ import { CheckCircle } from "@mui/icons-material"
 
 const VideoCard = ({video : {id : {videoId}, snippet}}) => {
   
+  const randomNumber = Math.floor(Math.random() * 3) + 1;
+   const image = `https://img.youtube.com/vi/${videoId}/maxres${randomNumber}.jpg`;
   return (
     <Card sx={{width: {  xs: '100%', sm: '358px', md: '320px'}, boxShadow: 'none' , border:'1px solid gray',borderRadius: '5px'}}>
       <Link to={`/video/${videoId} `}>
         <CardMedia 
          
-         image={snippet?.thumbnails?.high?.url}
+        //  image={snippet?.thumbnails?.high?.url}
+        image={snippet?.thumbnails?.high?.url || image}
          alt={snippet?.title}
          sx={{width:{xs: '100%', sm:'358px', md:'320px'}, height: 180}}
          />
